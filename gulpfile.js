@@ -124,6 +124,7 @@ gulp.task('watch', function() {
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
+    port: 8888,
     livereload: true
   });
 });
