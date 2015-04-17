@@ -49,27 +49,6 @@
         sorter : "alpha"
       });
 
-<<<<<<< HEAD
-=======
-      function addApiKeyAuthorization(){
-        var key = encodeURIComponent($('#input_apiKey')[0].value);
-        if(key && key.trim() != "") {
-            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
-            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
-            log("added key " + key);
-        }
-      }
-
-      $('#input_apiKey').change(addApiKeyAuthorization);
-
-      // if you have an apiKey you would like to pre-populate on the page for demonstration purposes...
-      /*
-        var apiKey = "myApiKeyXXXX123456789";
-        $('#input_apiKey').val(apiKey);
-        addApiKeyAuthorization();
-      */
-
->>>>>>> develop_2.0
       window.swaggerUi.load();
 
       function log() {
@@ -83,12 +62,10 @@
 
 <body class="swagger-section">
 <div id='header'>
-  <div class="swagger-ui-wrap">  
+  <div class="swagger-ui-wrap">
     <a id="logo" href="http://propertycompass.com.au">
       <img src='http://static.propertycompass.com.au/logo.png' height="30px" />
     </a>
-    <form id='api_selector'>                  
-    </form>
   </div>
 </div>
 
