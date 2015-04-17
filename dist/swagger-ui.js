@@ -1,6 +1,6 @@
 /**
  * swagger-ui - Swagger UI is a dependency-free collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API
- * @version v2.1.0-M2
+ * @version v2.1.1-M2
  * @link http://swagger.io
  * @license Apache 2.0
  */
@@ -20599,7 +20599,7 @@ SwaggerUi.Views.HeaderView = Backbone.View.extend({
 
   showPetStore: function(){
     this.trigger('update-swagger-ui', {
-      url:'http://petstore.swagger.wordnik.com/api/api-docs'
+      url:'http://petstore.swagger.io/v2/swagger.json'
     });
   },
 
@@ -20639,6 +20639,7 @@ SwaggerUi.Views.HeaderView = Backbone.View.extend({
     }
   }
 });
+
 'use strict';
 
 SwaggerUi.Views.MainView = Backbone.View.extend({
